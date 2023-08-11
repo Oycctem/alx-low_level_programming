@@ -7,11 +7,11 @@
 */
 int main(void)
 {
-	char one_to_nine;
+	char zero_to_nine;
 
-		for (one_to_nine = '1'; one_to_nine <= '9'; ++one_to_nine)
+		for (zero_to_nine = '0'; zero_to_nine <= '9'; ++zero_to_nine)
 		{
-			putchar(one_to_nine);
+			putchar(zero_to_nine);
 		}
 	putchar('\n');
 
