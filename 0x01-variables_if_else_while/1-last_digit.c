@@ -9,10 +9,11 @@
 int main(void)
 {
 	int n;
+	int lastnum;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int lastnum = abs(n) % 10;
+	lastnum = abs(n) % 10;
 
 	printf("last digit of %d", n);
 	if (lastnum != 0 && lastnum < 6)
