@@ -7,13 +7,13 @@
 */
 int main(void)
 {
-	const char *A_to_Z = "abcdefghijklmnopqrstuvwxyz"
+	char A_to_Z;
 
-		for (int i = 0; A_to_Z[i] != '\0'; i++)
+		for (A_to_Z = 'a'; A_to_Z <= 'z'; ++A_to_Z)
 		{
-			putchar(A_to_Z[i]);
+			putchar(A_to_Z);
 		}
-	putchar('\n')
+	putchar('\n');
 
 		return (0);
 }
