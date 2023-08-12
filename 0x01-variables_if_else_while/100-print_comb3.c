@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	for (int first = 0; first <= 8; ++first_digit)
+	for (int first = 0; first <= 8; ++first)
 	{
 		for (int second = first + 1; second <= 9; ++second)
 		{
