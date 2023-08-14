@@ -15,7 +15,7 @@ int main(void)
 	{
 		while (digit2 <= 8)
 		{
-			while (third <= 9)
+			while (digit3 <= 9)
 			{
 			putchar('0' + digit1);
 			putchar('0' + digit2);
