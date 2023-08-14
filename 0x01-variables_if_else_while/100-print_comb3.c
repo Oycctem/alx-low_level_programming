@@ -5,24 +5,31 @@
 *putchar function used to a print a char
 *Return: retuning (0)
 */
-
 int main(void)
 {
-	for (int first = 0; first <= 8; ++first)
-	{
-		for (int second = first + 1; second <= 9; ++second)
-		{
-			putchar('0' + first);
-			putchar('0' + second);
+	int digit1 = 0;
+	int digit2 = 1;
 
-			if (first != 8 || second != 9)
+	while (digit1 <= 8)
+	{
+		while (digit2 <= 9)
+		{
+			putchar('0' + digit1);
+			putchar('0' + digit2);
+
+			if (digit1 != 8 || digit2 != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+
+			digit2++;
+
 		}
+
+		digit1++;
+		digit2 = digit1 + 1;
 	}
 	putchar('\n');
 	return (0);
 }
-
