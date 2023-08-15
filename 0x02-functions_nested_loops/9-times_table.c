@@ -18,10 +18,6 @@ void times_table(void)
 
 			if (table < 10)
 			{
-				if (d > 0)
-				{
-					_putchar(' ');
-				}
 				_putchar(' ');
 				_putchar('0' + table);
 			}
