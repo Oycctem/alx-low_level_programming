@@ -8,13 +8,9 @@
 
 int main(void)
 {
-	char a_to_z;
-
-	for (a_to_z = 'a'; a_to_z <= 'z'; ++a_to_z)
-	{
-		_putchar(a_to_z);
-	}
+	print_alphabet();
 	_putchar('\n');
 
 		return (0);
 }
+
