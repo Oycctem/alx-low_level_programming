@@ -14,7 +14,7 @@ int main(void)
 	{
 		_putchar(a_to_z);
 	}
-	_putchar('\n')
+	_putchar('\n');
 
 		return (0);
 }
