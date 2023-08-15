@@ -9,14 +9,17 @@
 void print_alphabet_x10(void)
 {
 	char a_to_z;
-	int loop = 10;
+	int loop = 9;
+	int i = 0;
 
-	for (int i = 0; i < loop; i++)
+	while (i < loop)
 	{
 	for (a_to_z = 'a'; a_to_z <= 'z'; ++a_to_z)
 	{
 		_putchar(a_to_z);
 	}
 	_putchar('\n');
+
+	i++
 	}
 }
