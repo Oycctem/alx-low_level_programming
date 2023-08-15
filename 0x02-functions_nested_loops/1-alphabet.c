@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
-*main - entry point or the starting point of a c program's execution
+ * print_alphabet - prints the alphabet in lower case from a to z
 *_putchar function used to a print a char
-*Return: retuning (0)
+*Return: retuning nothing (void)
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char a_to_z;
+
+	for (a_to_z = 'a'; c <= 'z'; ++a_to_z)
+	{
+		_putchar(a_to_z);
+	}
 	_putchar('\n');
-
-		return (0);
 }
-
