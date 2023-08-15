@@ -1,14 +1,19 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
 *main - entry point or the starting point of a c program's execution
-*Printf function used to a print a string
 *Return: always(0)
 */
 
 int main(void)
-
 {
-	printf("_putchar\n");
+	char abe[] = "_putchar";
+	int a;
+
+	for (a = 0; abe[a] != '\0'; a++)
+	{
+		_putchar(abe[a]);
+	}
+	_putchar('\n');
 	return (0);
 }
