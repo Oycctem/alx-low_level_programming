@@ -16,6 +16,10 @@ void times_table(void)
 		{
 			int table = u * d;
 
+			if (d > 0)
+			{
+				putchar(' ');
+			}
 			if (table < 10)
 			{
 				if (d > 0)
