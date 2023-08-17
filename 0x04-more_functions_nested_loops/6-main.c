@@ -1,4 +1,4 @@
-julien@ubuntu:~/0x04$ cat 6-main.c
+
 #include "main.h"
 
 /**
