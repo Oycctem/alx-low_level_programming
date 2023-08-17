@@ -5,13 +5,13 @@
  *Return: returning 0
  */
 
-int print_numbers(void)
+void print_numbers(void)
 {
-	char 0_to_9;
+	char num;
 
-		for (0_to_9 = '0'; 0_to_9 <= '9'; ++0_to_9)
+		for (num = '0'; num <= '9'; ++num)
 		{
-			_putchar(0_to_9);
+			_putchar(num);
 		}
-	_putchar('\n')
+	_putchar('\n');
 }
