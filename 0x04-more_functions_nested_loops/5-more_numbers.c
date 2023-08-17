@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * print_numbers - prints numbers
+ * more_numbers - prints numbers
  *_putchar: prints a char
  *Return: returning 0
  */
 
-void print_numbers(void)
+void more_numbers(void)
 {
 	char num;
 
