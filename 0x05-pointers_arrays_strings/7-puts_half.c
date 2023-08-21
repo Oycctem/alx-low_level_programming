@@ -14,7 +14,7 @@ void puts_half(char *str)
 	{
 		len++;
 	}
-	brgi = len / 2;
+	begi = len / 2;
 
 	for (i = begi; i < len; i++)
 	{
