@@ -9,12 +9,12 @@ void puts_half(char *str)
 	int len = 0;
 	int begi;
 	int i;
-	
+
 	while (str[len] != '\0')
 	{
 		len++;
 	}
-	begi = len / 2;
+	begi = (len - 1) / 2;
 
 	for (i = begi; i < len; i++)
 	{
