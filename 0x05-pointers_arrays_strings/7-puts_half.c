@@ -4,7 +4,7 @@
  *@str: string
  *Return: returning 0
  */
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int len = 0;
 	int begi = len / 2;
