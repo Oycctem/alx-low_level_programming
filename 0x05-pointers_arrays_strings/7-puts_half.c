@@ -7,8 +7,14 @@
 void puts_half(char *str)
 {
 	int len = 0;
-	int begi = len / 2;
+	int begi;
 	int i;
+	
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	brgi = len / 2;
 
 	for (i = begi; i < len; i++)
 	{
