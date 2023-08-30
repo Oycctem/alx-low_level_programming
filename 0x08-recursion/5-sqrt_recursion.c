@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- *
- *
- *
- *
+ *_sqrt - function that find the square of a given int
+ *@n: int
+ *@x: int
+ *@y: int
+ *Return: returns the result
  */
 int _sqrt(int n, int x, int y)
 {
@@ -14,7 +15,7 @@ int _sqrt(int n, int x, int y)
 	{
 		return (a);
 	}
-	else if (a * a < n && (a + 1) * (a + 1) > n)
+	else if (a * a < n && (a * a) <= n && (a + 1) * (a + 1) > n)
 	{
 		return (-1);
 	}
@@ -32,5 +33,5 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 	else
-	return ( _sqrt(n, 0, n));
+	return (_sqrt(n, 0, n));
 }
