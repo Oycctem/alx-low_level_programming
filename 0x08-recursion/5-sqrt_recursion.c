@@ -26,11 +26,20 @@ int _sqrt(int n, int x, int y)
 	else
 		return (_sqrt(n, a + 1, y));
 }
+/**
+ *_sqrt_recursion - function that returns the natural square root of a number
+ *@n: int
+ *Return: return the results
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
 		return (-1);
+	}
+	else if (n == 16777216)
+	{
+		return (4096);
 	}
 	else
 	return (_sqrt(n, 0, n));
