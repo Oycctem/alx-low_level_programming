@@ -15,10 +15,11 @@ int main(int argc, char *argv[])
 		first = atoi(argv[1]);
 		second = atoi(argv[2]);
 		printf("%d\n", first * second);
+		return (0);
 	}
 	else
 	{
 		printf("Error\n");
-	return (0);
+	return (-1);
 	}
 }
