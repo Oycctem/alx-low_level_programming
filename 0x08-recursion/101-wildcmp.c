@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- *wildcmp - function that returns 1 if a string is a palindrome, otherwise 0
- *@a: string
- *@b: string
- *Return: 1 if palindrome, otherwise 0
+ *wildcmp - compares two string, returns 1 if they're identical, if not 0
+ *@s1: string
+ *@s2: string
+ *Return: 1 if identical, otherwise 0
  */
 
-int wildcmp(char *a, char *b)
+int wildcmp(char *s1, char *s2)
 {
-	if (*a == '\0' && *b == '\0')
+	if (*s1 == '\0' && *s2 == '\0')
 	{
 		return (1);
 	}
-	if (*b == '*')
+	if (*s2 == '*')
 	{
-		return (wildcmp(a, b + 1) || (*a != ('\0') && wildcmp(a + 1, b)));
+		return (wildcmp(s1, s2 + 1) || (*s1 != ('\0') && wildcmp(s1 + 1, s2)));
 	}
-	if (*a == *b || *b == '*')
-		return (wildcmp(a + 1, b + 1));
+	if (*s1 == *s2 || *s2 == '*')
+		return (wildcmp(s1 + 1, s2 + 1));
 	{
 		return (0);
 	}
