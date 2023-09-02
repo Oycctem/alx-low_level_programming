@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
 			if (argv[i][n] < '0' || argv[i][n] > '9')
 			{
 				printf("error\n");
-				return (0);
+				return (1);
 			}
 		}
 		sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 
-	return (1);
+	return (0);
 }
