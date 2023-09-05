@@ -8,10 +8,10 @@
  */
 char *_strdup(char *str)
 {
-	int length, i = 0;
+	int length, i;
 	char *n;
 
-	if (str == ('\0'))
+	if (str == NULL)
 	{
 		return ('\0');
 	}
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	i = 0
+	i = 0;
 	while (i < length)
 	{
 		*(n + i) = str[i];
