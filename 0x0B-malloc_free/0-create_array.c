@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  *create_array - function that creates an array of specified chars
  *@size: unsigned int
@@ -19,9 +20,11 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
-	while (i < size)
+	i = 0;
+	while ( i < size)
 	{
 		*(a + i) = c;
+		i++;
 	}
 	return (a);
 }
