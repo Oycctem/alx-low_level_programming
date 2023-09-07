@@ -10,14 +10,16 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *x
-	int i, a = 0, b = 0;
+	char *x;
+	int i;
+	unsigned int a = 0;
+	unsigned int b = 0;
 
-	if (s1 == '\0')
+	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	if (s2 == '\0')
+	if (s2 == NULL)
 	{
 		s2 = "";
 	}
