@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	for (byts = 0; byts < i; byts++)
 	{
-		printf("%.2x", array[byts]);
+		printf("%02x", array[byts] & 0xFF);
 		if (byts != i - 1)
 			printf(" ");
 	}
