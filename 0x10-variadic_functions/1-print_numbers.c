@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 /**
  *print_numbers - function that prints numbers
- *@sperator: string to be printed
+ *@separator: string to be printed
  *@n: number of integers
- *Return:
+ *Return: returns nothing
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
