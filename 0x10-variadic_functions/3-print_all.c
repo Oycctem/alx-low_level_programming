@@ -35,6 +35,7 @@ void print_all(const char * const format, ...)
 		if (x)
 		{
 		printf("%s", x);
+		break;
 		}
 		printf("(nil)");
 		break;
@@ -42,8 +43,7 @@ void print_all(const char * const format, ...)
 		n = 0, i++;
 		continue;
 	}
-	n = 1;
-	i++;
+	n = 1, i++;
 	}
 	printf("\n");
 	va_end(a);
