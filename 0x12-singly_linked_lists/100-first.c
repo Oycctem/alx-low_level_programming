@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- *main - entry point
+ *first - entry point
  *Return: nothing
  */
 void __attribute__ ((constructor)) first()
