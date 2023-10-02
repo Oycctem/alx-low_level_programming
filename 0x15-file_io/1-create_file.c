@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 	{
 		b = write(i, text_content, a);
 	}
-	if (b == - 1)
+	if (b == -1)
 	{
 		return (-1);
 	}
