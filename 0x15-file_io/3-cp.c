@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_form file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	x = argv[1];
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	}
 	if (close(b) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't clode fd %d\n", b);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", b);
 	}
 	return (0);
 }
