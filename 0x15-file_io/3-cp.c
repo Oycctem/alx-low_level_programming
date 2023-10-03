@@ -24,12 +24,12 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	b = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	error_handling(a, b, x);
 	if (b == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
+	error_handling(a, b, x);
 	if (close(a) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", a);
