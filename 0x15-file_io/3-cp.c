@@ -27,16 +27,15 @@ int main(int argc, char *argv[])
 	if (b == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		close(a);
 		exit(99);
 	}
 	error_handling(a, b, x);
-	if (close(a))
+	if (close(a) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", a);
 		exit(100);
 	}
-	if (close(b))
+	if (close(b) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", b);
 		exit(100);
