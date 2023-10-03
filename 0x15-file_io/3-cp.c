@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	char *x;
+	char *x, *y;
 
 	if (argc != 3)
 	{
@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	x = argv[1];
+	y = argv[2];
 
 	a = open(x, O_RDONLY);
 	if (a == -1)
@@ -26,10 +27,10 @@ int main(int argc, char *argv[])
 	b = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (b == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", y);
 		exit(99);
 	}
-	error_handling(a, b, x);
+	error_handling(a, b, x, y);
 	if (close(a) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", a);
@@ -47,8 +48,9 @@ int main(int argc, char *argv[])
  * @a: int
  * @b: int
  * @x: char
+ * @y: char
  */
-void error_handling(int a, int b, char *x)
+void error_handling(int a, int b, char *x, char *y)
 {
 	ssize_t g, j;
 	char buffer[NBYTES];
@@ -65,7 +67,7 @@ void error_handling(int a, int b, char *x)
 			j = write(b, buffer, g);
 			if (j != g)
 			{
-				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", x);
+				dprintf(STDERR_FILENO, "Error: Can't write to %s\n", y);
 				exit(99);
 			}
 		}
