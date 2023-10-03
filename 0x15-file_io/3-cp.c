@@ -31,12 +31,12 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	error_handling(a, b, x);
-	if (close(a) == -1)
+	if (close(a))
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", a);
 		exit(100);
 	}
-	if (close(b) == -1)
+	if (close(b))
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", b);
 		exit(100);
