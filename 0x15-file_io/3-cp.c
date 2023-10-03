@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	error_handling(a, b, x);
 	if (close(a) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", x);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", a);
 		exit(100);
 	}
 	if (close(b) == -1)
