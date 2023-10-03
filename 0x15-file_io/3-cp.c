@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_form file_to\n");
-		return (97);
+		exit(97);
 	}
 	x = argv[1];
 
@@ -21,20 +21,20 @@ int main(int argc, char *argv[])
 	if (a == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", x);
-		return (98);
+		exit(98);
 	}
 	b = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (b == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(a);
-		return (99);
+		exit(99);
 	}
 	error_handling(a, b, x);
 	if (close(a) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %s\n", x);
-		return (100);
+		exit(100);
 	}
 	if (close(b) == -1)
 	{
