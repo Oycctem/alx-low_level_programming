@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
-*main - entry point or the starting point of a c program's execution
+*main - entry point or the starting point of a c programs execution
 *write function used to a print a string
 *Return: retuning (1)
 */
