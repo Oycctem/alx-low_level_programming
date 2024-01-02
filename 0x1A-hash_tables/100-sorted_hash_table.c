@@ -205,4 +205,4 @@ void shash_table_delete(shash_table_t *ht)
 		node = head;
 	}
 	free(ht);
-}i
+}
